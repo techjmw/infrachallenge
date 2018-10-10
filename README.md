@@ -22,6 +22,8 @@ Install local versions of the following:
 ## Deploy on Ubuntu (18.04 supported)
 Clone the repository locally and run the included shell scripts and artifacts.  (Wrapper for other environments will be considered based on developer demand)
 
+## Manual steps to install:
+
 ### Install database
 ```
 apt install -y postgresql postgresql-contrib
@@ -30,5 +32,19 @@ apt install -y postgresql postgresql-contrib
 ```
 /etc/init.d/postgresql start
 ```
-(consider logs for help located here: /var/log/postgresql/postgresql*main.log)
+(logs: /var/log/postgresql/postgresql*main.log)
+
+### Install Python 3 to support flask
+```
+apt install -y python3-venv virtualenv python3-pip
+```
+### In the flask directory setup virtualenv
+```
+pip3 install virtualenv;virtualenv venv
+```
+(source the activate binary file and copy artifacts into the virtualenv directory)
+### Start flask
+```
+flask run
+```
 
