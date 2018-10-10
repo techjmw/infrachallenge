@@ -42,7 +42,7 @@ apt install -y python3-venv virtualenv python3-pip
 ```
 pip3 install virtualenv;virtualenv venv
 ```
-(source the activate binary file and copy artifacts into the virtualenv directory)
+(source the activate binary file and copy artifacts from cloned repo into the virtualenv directory)
 ### Start flask
 ```
 flask run
@@ -53,7 +53,7 @@ apt install -y nodejs npm
 npm init -y; npm install -g create-react-app
 create-react-app reactapp
 ```
-(Copy artifacts into reactapp src folder)
+(Copy artifacts from cloned repo into reactapp src folder)
 ## Start node package manager to bring up react
 ```
 npm start
