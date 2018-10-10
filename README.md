@@ -10,19 +10,23 @@ Use the following steps to create your local dev environment.
 
 ### Prerequisities
 
-IDE of choice for editing
+IDE of choice
+
 Install local versions of the following:
 
--python
--Postgres and pgAdmin.
--flask
--React
--Node.js
+- Python 3
+- Postgres
+- flask
+- Node.js and React
 
 ```
 
-## To deploy to Ubuntu 18.04:
-use the included files and clone the repository
+### To quickly get up and running with minimal overhead
+## To deploy on Ubuntu (18.04 supported)
+Clone the repository locally and run the shell scripts.  (Wrapper for other environments will be considered based on system demand)
+
+
+
 
 
 
