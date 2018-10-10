@@ -35,6 +35,8 @@ apt install -y postgresql postgresql-contrib
 - logs: /var/log/postgresql/postgresql*main.log
 - Connect to Postgres 
   ``` sudo -u postgres psql ```
+### Postgres should be listening on default TCP port 5432, see logs for reference
+  
 #### Install Python 3 to support flask
 ```
 apt install -y python3-venv virtualenv python3-pip
@@ -48,6 +50,8 @@ pip3 install virtualenv;virtualenv venv
 ```
 flask run
 ```
+### Connect to the react app in your browser at http://localhost:5000
+
 #### Install, initialize and create react app
 ```
 apt install -y nodejs npm
@@ -59,7 +63,9 @@ create-react-app reactapp
 ```
 npm start
 ```
+### Connect to the react app in your browser at http://localhost:3000
 
+## Get started editing and changing content
 ---
 To edit contents flask, modify the flaskapp.py file
 ```
@@ -71,7 +77,7 @@ def greeting():
         app.run(host='0.0.0.0')
 ```
 ---
-To edit contents of react, modify the App.js file
+To edit contents of react, modify the App.js file and optionally App.css
 ```
 class App extends Component {
   render() {
@@ -89,4 +95,20 @@ class App extends Component {
 }
 ```
 
+---
+## Troubleshooting
+### Common issues are incorrect permissions on files such as RWX, starting a command in the wrong directory and not having the PATH set, etc... refer to artifacts for reference is deploying
 
+---
+# Want to make this production ready, here are some ideas to consider
+
+- Python
+- Flask and Flask-Restful
+- Postgres with SQLAchemy and FlaskMigrate
+- Nginx or HAproxy
+- Webpack
+- React with Redux and Redux Sagas or Relay
+- Authentication integration, Auth0 or some type of web token
+- Containers (multi-container docker) or k8 vs virtualenv to isolate and scale
+
+Consider integration into AWS with ECR with integrated IAM
