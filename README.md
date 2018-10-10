@@ -24,42 +24,69 @@ Clone the repository locally and run the included shell scripts and artifacts.  
 
 ## Manual steps to install:
 
-### Install database
+#### Install database
 ```
 apt install -y postgresql postgresql-contrib
 ```
-### Start postgres
+#### Start postgres
 ```
 /etc/init.d/postgresql start
 ```
-(logs: /var/log/postgresql/postgresql*main.log)
-
-### Install Python 3 to support flask
+- logs: /var/log/postgresql/postgresql*main.log
+- Connect to Postgres 
+  ``` sudo -u postgres psql ```
+#### Install Python 3 to support flask
 ```
 apt install -y python3-venv virtualenv python3-pip
 ```
-### In the flask directory setup virtualenv
+#### Create a flask directory and setup a virtualenv
 ```
 pip3 install virtualenv;virtualenv venv
 ```
 (source the activate binary file and copy artifacts from cloned repo into the virtualenv directory)
-### Start flask
+#### Start flask
 ```
 flask run
 ```
-## Install, initialize and create react app
+#### Install, initialize and create react app
 ```
 apt install -y nodejs npm
 npm init -y; npm install -g create-react-app
 create-react-app reactapp
 ```
 (Copy artifacts from cloned repo into reactapp src folder)
-## Start node package manager to bring up react
+#### Start node package manager to bring up react
 ```
 npm start
 ```
 
+---
+To edit contents flask, modify the flaskapp.py file
+```
+app.route("/")
+def greeting():
+    return "<h1 style='color:orange'>Hello World!</h1>"
 
-
+    if __name__ == "__main__":
+        app.run(host='0.0.0.0')
+```
+---
+To edit contents of react, modify the App.js file
+```
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Hello shrunken world!
+	  </p>
+        </header>
+      </div>
+    );
+  }
+}
+```
 
 
