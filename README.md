@@ -97,8 +97,8 @@ class App extends Component {
 
 ---
 ## Troubleshooting
-### Common issues are incorrect permissions on files such as RWX, starting a command in the wrong directory and not having the PATH set, etc... refer to artifacts for reference is deploying
-### When in doubt, look at log directories, firewall port blocking, configurations related to restricing access to localhost and services not running.
+### Common issues are incorrect permissions on files such as RWX, starting a command in the wrong directory and not having the PATH set, etc... refer to artifacts for reference with deploying
+### When in doubt, look at log files, firewall port blocking, configurations related to restricing access to localhost only and services not running.
 
 ---
 # Want to make this production ready, here are some ideas to consider
