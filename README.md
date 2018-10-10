@@ -6,7 +6,7 @@ Tiny application for big impact.  Built upon two components linked to foundation
 
 Use the following steps to create your local dev environment. 
 
-### Prerequisities
+## Prerequisities
 
 IDE of choice
 
@@ -18,12 +18,14 @@ Install local versions of the following:
 - Node.js and React
 
 
-### To quickly get up and running with minimal overhead
-## To deploy on Ubuntu (18.04 supported)
-Clone the repository locally and run the shell scripts.  (Wrapper for other environments will be considered based on system demand)
+## TL;DR - To quickly get up and running with minimal overhead
+## Deploy on Ubuntu (18.04 supported)
+Clone the repository locally and run the included shell scripts and artifacts.  (Wrapper for other environments will be considered based on developer demand)
 
-
-
-
-
+### Install front end requirements
+From cloned directory:
+---
+apt install -y postgresql postgresql-contrib
+---
+(consider logs for help located here: /var/log/postgresql/postgresql*main.log)
 
