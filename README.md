@@ -112,3 +112,11 @@ class App extends Component {
 - Containers (multi-container docker) or k8 vs virtualenv to isolate and scale
 
 Consider integration into AWS with ECR with integrated IAM
+
+# Small scale deployemnt
+
+- Leverage Cloudformation and or Ansible with playbooks
+- CI software of choice such as Semaphore, Circle
+- Consider to build out on a PaaS such as Heroku, Elastic Beanstalk or roll on bare IaaS such as AWS, Azure
+- To monitor the app, tools such as deadmansnitch and or VictorOps are helpful
+- Perfom testing using tools such as WebLOAD, JMeter, others
