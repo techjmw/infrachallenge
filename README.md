@@ -119,5 +119,5 @@ Consider integration into AWS with ECR with integrated IAM
 - Leverage Cloudformation and or Ansible with playbooks
 - CI software of choice such as Semaphore, Circle
 - Consider to build out on a PaaS such as Heroku, Elastic Beanstalk or roll on bare IaaS such as AWS, Azure
-- To monitor the app, tools such as crontab, monit, nagios, zabbix, Grafana, deadmansnitch, DataDog and or VictorOps 
+- To monitor the app, tools such as crontab, monit, nagios, zabbix, Grafana, deadmansnitch, netdata, DataDog and or VictorOps 
 - Perfom testing using tools such as WebLOAD, JMeter, etc...
