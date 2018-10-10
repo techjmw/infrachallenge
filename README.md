@@ -4,7 +4,7 @@ Onan-asil tiny application for big impact.  Built upon two components linked to 
 
 ## Getting Started
 
-Use the following steps to create your local dev environment. 
+Use the following steps to create your local dev environment.  Find something wrong, put notes in your pull request to contribute back.  Sneakernet, Slack, email also work for help if anything isn't clear.
 
 ## Prerequisities
 
@@ -20,7 +20,7 @@ Install local versions of the following:
 
 ## TL;DR - To quickly get up and running with minimal overhead
 ## Deploy on Ubuntu (18.04 supported)
-Clone the repository locally and run the included shell scripts and artifacts.  (Wrapper for other environments will be considered based on developer demand)
+Clone the repository locally and run the included shell scripts with included artifacts.  (Wrapper for other environments will be considered based on developer demand)
 
 ## Manual steps to install:
 
