@@ -1,4 +1,4 @@
-# infrachallenge
+# Infrastructure Challenge
 
 Onan-asil tiny application for big impact.  Built upon two components linked to foundational development dating back to 1972.  Plus, shrink rays of course!
 
