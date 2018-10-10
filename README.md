@@ -47,4 +47,19 @@ pip3 install virtualenv;virtualenv venv
 ```
 flask run
 ```
+## Install, initialize and create react app
+```
+apt install -y nodejs npm
+npm init -y; npm install -g create-react-app
+create-react-app reactapp
+```
+(Copy artifacts into reactapp src folder)
+## Start node package manager to bring up react
+```
+npm start
+```
+
+
+
+
 
