@@ -112,7 +112,7 @@ class App extends Component {
 - Authentication integration, Auth0 or some type of web token
 - Containers (multi-container docker) or k8 vs virtualenv to isolate and scale
 
-Consider integration into AWS with ECR with integrated IAM
+Leveraging isolation with containers and distributed systems behind load balancers will give a more scalable solution for an application tier with multiple layers.  Consider integration into AWS with ECR with integrated IAM or roll your own IaaS and invest in a truly custom application tier stack for more control at the cost of  overhead and additional engineering support. QA and fault tolerance testing is necessary to ensure continued health as releases are pushed out, components are upgraded or swapped out.  In addition multiple environments for validating changes prior to pushing to production are necessary to ensure risk is reduced before going live to a production facing customer deployment.  Monitoring is another key component that needs integrated to give visiblity into uptime and availablity of the various components.  Finally, keeping security in mind to protect IP and ensure the platform is secure is very important, if components are externally accessible, running regular security scans for vulnerabilities is a best practice and remediating patching in a relatively quick fashion is paramount to running a produciton platform. These are just a few of the areas necessary to bring an application stack to a production ready state.
 
 # Small scale deployemnt
 
@@ -121,3 +121,5 @@ Consider integration into AWS with ECR with integrated IAM
 - Consider to build out on a PaaS such as Heroku, Elastic Beanstalk or roll on bare IaaS such as AWS, Azure
 - To monitor the app, tools such as crontab, monit, nagios, zabbix, Grafana, deadmansnitch, netdata, DataDog and or VictorOps 
 - Perfom testing using tools such as WebLOAD, JMeter, etc...
+
+Small scale needs can be similar large scale, depending on how it is designed.  A small scale could leverage the same basic design layers with less scale at each layer, or it could be a more limited stack with reduced layers in a more condensed offering.  CI/CD pipeline automated workflows are helpful long term for either type to maintain and release with consistency.  For small scale, I would keep it simple, no reason to add complexity for complexity sake and ensure that a MVP product was delivered, then iterate and expand based on priorities around KPIs.  Address the weak points in the systems that present concerns or technical roadblocks in an iterative fashion or cause pain for end users. Supporting internal developers would be my initial focus, followed by other use cases and assessing how scalable the platform needs to be without over engineering it.
