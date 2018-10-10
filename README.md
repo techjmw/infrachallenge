@@ -1,6 +1,6 @@
 # infrachallenge
 
-Tiny application for big impact.  Built upon two components linked to foundational development dating back to 1972.  Plus, shrink rays of course!
+Onan-asil tiny application for big impact.  Built upon two components linked to foundational development dating back to 1972.  Plus, shrink rays of course!
 
 ## Getting Started
 
@@ -22,10 +22,13 @@ Install local versions of the following:
 ## Deploy on Ubuntu (18.04 supported)
 Clone the repository locally and run the included shell scripts and artifacts.  (Wrapper for other environments will be considered based on developer demand)
 
-### Install front end requirements
-From cloned directory:
----
+### Install database
+```
 apt install -y postgresql postgresql-contrib
----
+```
+### Start postgres
+```
+/etc/init.d/postgresql start
+```
 (consider logs for help located here: /var/log/postgresql/postgresql*main.log)
 
